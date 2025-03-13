@@ -1,0 +1,12 @@
+---
+import { Image } from "astro:assets";
+
+const { image, slug } = Astro.props;
+---
+
+<div class="m-[10px] w-[340px] h-[200px] group relative cursor-pointer">
+    <Image src={image} alt="image" width="320" height="180" class="rounded-2xl" />
+    <div class="hidden absolute bottom-[10px] left-[10px] group-hover:block">
+        <span>Hello</span>
+    </div>
+</div>

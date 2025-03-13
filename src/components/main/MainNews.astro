@@ -1,0 +1,13 @@
+---
+import { getPosts } from "@data/wp";
+import MainArticle from "./MainArticle.astro";
+
+const posts = await getPosts();
+
+---
+
+<div class="w-full bg-yellow-700 flex items-center justify-center">
+    <div class="grid grid-cols-2 gap-[24px]">
+        {posts.map(d => <MainArticle data={d} />)}
+    </div>
+</div>

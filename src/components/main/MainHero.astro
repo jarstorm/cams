@@ -1,0 +1,34 @@
+---
+import MainHeroMarquee from "./MainHeroMarquee.astro";
+
+const DATA = [
+    [
+    {image: "/image1.webp", slug: "1"},
+    {image: "https://dummyimage.com/320x180/000/fff.jpg", slug: "2"},
+    {image: "/image1.webp", slug: "3"},
+    {image: "https://dummyimage.com/320x180/000/fff.jpg", slug: "4"},
+],
+[
+    {image: "/image1.webp", slug: "1"},
+    {image: "https://dummyimage.com/320x180/000/fff.jpg", slug: "2"},
+    {image: "/image1.webp", slug: "3"},
+    {image: "https://dummyimage.com/320x180/000/fff.jpg", slug: "4"},
+],
+[
+    {image: "/image1.webp", slug: "1"},
+    {image: "https://dummyimage.com/320x180/000/fff.jpg", slug: "2"},
+    {image: "/image1.webp", slug: "3"},
+    {image: "https://dummyimage.com/320x180/000/fff.jpg", slug: "4"},
+]
+]
+
+
+---
+
+<div class="w-full flex flex-col items-center bg-[linear-gradient(173.35deg,#1c3e64_-59.57%,#306383_-21.51%,#4891aa_18.04%,#6cd3e2_45.75%,#77e9f4_60.09%,rgba(126,245,255,0)_75.37%)] py-[100px]">
+<h1>Hispacams, tu portal de webcams</h1>
+<h3>Disfruta de más de 200  webcams en directo repartidas por toda EspañaAtracciones turísticas en España</h3>
+<MainHeroMarquee direction="right" data={DATA[0]} id="marquee1"/>
+<MainHeroMarquee direction="left" data={DATA[1]} id="marquee2"/>
+<MainHeroMarquee direction="right" data={DATA[2]} id="marquee3"/>
+</div>

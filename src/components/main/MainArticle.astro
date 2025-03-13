@@ -1,0 +1,19 @@
+---
+import { Image } from "astro:assets";
+
+const { data } = Astro.props;
+//console.log(data)
+console.log(data._embedded["wp:featuredmedia"][0].source_url)
+
+const imageSrc = data._embedded["wp:featuredmedia"][0].source_url;
+---
+
+<div class="w-[320px] h-auto rounded-2xl bg-amber-950 relative">    
+    <Image src={imageSrc} width="400" height="400" class="object-cover rounded-2xl h-[400px]" alt="news image"/>
+    <a href={data.link}>
+        <div class="bg-white absolute bottom-0 left-0 w-[320px] rounded-2xl p-[24px] flex flex-col cursor-pointer">
+            <span>{data.date}</span>
+            <span class="text-xl text-[#002038] font-bold">{data.title.rendered}</span>
+        </div>
+    </a>
+</div>

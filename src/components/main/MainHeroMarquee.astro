@@ -1,0 +1,44 @@
+---
+import { Image } from "astro:assets";
+import MainMarqueeElement from "./MainMarqueeElement.astro";
+
+const { direction, data,id } = Astro.props;
+
+---
+
+<div id={id}>    
+    {data.map(d => <MainMarqueeElement image={d.image} slug={d.slug} />)}
+    
+</div>
+
+<script is:inline src="https://cdn.jsdelivr.net/npm/vanilla-infinite-marquee@1.0.12/infinite-marquee.bundle.js">
+
+</script>
+
+<script is:inline  define:vars={{direction, id}}>
+
+
+new InfiniteMarquee({
+	element: `#${id}`,
+	speed: 50000,
+	smoothEdges: true,
+	direction: direction,
+    gap: '15px',
+	duplicateCount: 1,
+    pauseOnHover: true,
+	mobileSettings: {
+		direction: 'top',
+		speed: 20000
+	},
+	on: {
+		beforeInit: () => {
+			console.log('Not Yet Initialized');
+		},
+
+		afterInit: () => {
+			console.log('Initialized');
+		}
+	}
+});
+
+</script>
