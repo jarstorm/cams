@@ -30,5 +30,4 @@ jobs:
         uses: denoland/deployctl@v1
         with:
           project: javierabad-cams-41 # TODO: replace with Deno Deploy project name
-          entrypoint: jsr:@std/http/file-server
-          root: dist
+          entrypoint: dist/server/entry.mjs
