@@ -6,10 +6,10 @@
     "dev": "astro dev",
     "build": "astro build",
     "astro": "astro",
-    "preview": "deno run --allow-net --allow-read --allow-env ./dist/server/entry.mjs"
+    "preview": ""
   },
   "dependencies": {
-    "@deno/astro-adapter": "^0.3.0",
+    "@astrojs/vercel": "^8.1.2",
     "@tailwindcss/vite": "^4.0.13",
     "astro": "^5.4.3",
     "tailwindcss": "^4.0.13"
