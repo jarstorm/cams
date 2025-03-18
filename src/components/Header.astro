@@ -1,13 +1,17 @@
 ---
 import { Image } from "astro:assets";
+import Link from "./common/Link.astro";
 ---
 
-<div class="w-full bg-amber-200 h-[80px] flex justify-center items-center">
+<div class="w-full bg-white h-[70px] flex justify-center items-center">
 <nav class="max-w-[1408px] w-full flex justify-between items-center">    
-    <Image src="/logo.svg" alt="logo" width="95" height="54" />    
-    <span>Webcams</span>
-    <span>Descubre premium</span>
-    <span>Más</span>
-    <span>Acceder</span>
+    <a href="/"><Image src="/logo.svg" alt="logo" width="95" height="54" /></a>
+    <div class="w-[800px] border border-[#e2e8f0] h-[44px] rounded-full">
+
+    </div>
+    <Link link="/webcams" text="Webcams" />
+    <Link link="#" text="Descubre premium" />
+    <Link link="#" text="Más" />
+    <Link link="#" text="Acceder" type="filled"/>
 </nav>
 </div>

@@ -1,0 +1,14 @@
+---
+import Layout from "layouts/Layout.astro"
+import { getPostData } from "@data/wp";
+
+const {slug} = Astro.params
+
+
+const postData = await getPostData(slug as string);
+
+---
+
+<Layout>
+<div set:html={postData[0].content.rendered}></div>
+</Layout>

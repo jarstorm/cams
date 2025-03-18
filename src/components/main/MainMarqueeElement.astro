@@ -1,12 +1,22 @@
 ---
 import { Image } from "astro:assets";
 
-const { image, slug } = Astro.props;
+const { image, slug, title, location } = Astro.props;
+
 ---
 
+<a href=`/webcams/${slug}`>
 <div class="m-[10px] w-[340px] h-[200px] group relative cursor-pointer">
-    <Image src={image} alt="image" width="320" height="180" class="rounded-2xl" />
-    <div class="hidden absolute bottom-[10px] left-[10px] group-hover:block">
-        <span>Hello</span>
+    <Image src={image} alt="image" width="320" height="180" class="rounded-2xl w-[320px] h-[180px] object-cover" onerror="this.onerror=null;this.src='https://dummyimage.com/320x180/000/fff.jpg'"/>
+    <div class="hidden absolute bottom-[10px] left-[10px] group-hover:block bg-blue-200  rounded-2xl">
+        
+<div class="flex items-center px-2 py-1 gap-2">
+        <Image src="/hispacams-eye.svg" width={24} height={24} alt="eye" />
+        <div class="flex flex-col items-start">
+<span class="text-sm">{title}</span>
+<span class="text-sm">{location}</span>
+        </div>
+    </div>    
     </div>
 </div>
+</a>        

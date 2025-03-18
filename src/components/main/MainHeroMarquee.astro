@@ -7,7 +7,7 @@ const { direction, data,id } = Astro.props;
 ---
 
 <div id={id}>    
-    {data.map(d => <MainMarqueeElement image={d.image} slug={d.slug} />)}
+    {data.map(d => <MainMarqueeElement image={d.image} slug={d.slug} title={d.camname} location={d.location} />)}
     
 </div>
 
