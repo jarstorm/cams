@@ -14,4 +14,8 @@ export default defineConfig({
   },
 
   adapter: vercel(),
+
+  image: {    
+    domains: ["astro.build"],
+  }
 });

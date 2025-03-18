@@ -7,9 +7,6 @@ const {slug} = Astro.params
 
 const postData = await getWebcamData(slug as string);
 
-postData.forEach(element => {
-    console.log(element.link)
-});
 
 ---
 
