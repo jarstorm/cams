@@ -15,9 +15,13 @@ export default defineConfig({
 
   adapter: vercel({
     imageService: true,
+    devImageService: 'sharp',
   }),
 
   image: {    
-    domains: ["astro.build"],
-  }
+    remotePatterns: [{
+      protocol: 'https',
+      hostname: 'hispacams.com',
+    }],
+  },
 });
