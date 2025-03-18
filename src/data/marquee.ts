@@ -1,9 +1,20 @@
 export const MARQUEE_DATA = [
-    [{"image":"https:\/\/www.hispacams.com\/get_imagen_ws.php?id=53&size=s",
+    [{"image":"https://www.hispacams.com/wp-content/uploads/2025/03/manzaneda-300x128.jpg",
     "camname":"Camarme\u00f1a \u2013 Picu Urriellu \u2013 Naranjo de Bulnes",
     "slug":"camarmena-picu-urriellu-naranjo-de-bulnes\/",
-    "location":"Asturias, Cabrales, Camarme\u00f1a","comments":"0"},{"image":"https:\/\/www.hispacams.com\/get_imagen_ws.php?id=224&size=s","camname":"Villaman\u00edn","slug":"villamanin\/","location":"Le\u00f3n, Villaman\u00edn","comments":"0"},{"image":"https:\/\/www.hispacams.com\/get_imagen_ws.php?id=203&size=s","camname":"Playa de Porc\u00eda","slug":"playa-de-porcia\/","location":"Asturias, El Franco, Porc\u00eda","comments":"0"},{"image":"https:\/\/www.hispacams.com\/get_imagen_ws.php?id=252&size=s","camname":"Unquera y Bustio","slug":"unquera-y-bustio\/","location":"Cantabria, Val de San Vicente, Unquera","comments":"0"},{"image":"https:\/\/www.hispacams.com\/get_imagen_ws.php?id=61&size=s","camname":"Puerto de As Figueiras","slug":"puerto-de-as-figueiras\/","location":"Asturias, Castropol, As Figueiras","comments":"0"},{"image":"https:\/\/www.hispacams.com\/get_imagen_ws.php?id=135&size=s","camname":"Playa de Porc\u00eda \u2013 Tapia","slug":"playa-de-porcia-tapia\/","location":"Asturias, Tapia de Casariego, Porc\u00eda","comments":"0"}],
-    [{"image":"https:\/\/www.hispacams.com\/get_imagen_ws.php?id=62&size=s","camname":"Belmonte de Miranda","slug":"belmonte-de-miranda\/","location":"Asturias, Belmonte de Miranda, Belmonte","comments":"0"},{"image":"https:\/\/www.hispacams.com\/get_imagen_ws.php?id=99&size=s","camname":"Muelle de Tapia de Casariego","slug":"muelle-de-tapia-de-casariego\/","location":"Asturias, Tapia de Casariego","comments":"0"},{"image":"https:\/\/www.hispacams.com\/get_imagen_ws.php?id=173&size=s","camname":"Playa de la Concha de Artedo","slug":"playa-de-la-concha-artedo\/","location":"Asturias, Cudillero, Artedo","comments":"0"},{"image":"https:\/\/www.hispacams.com\/get_imagen_ws.php?id=178&size=s","camname":"Foz \u2013 Playa de La Rapadoira","slug":"playa-de-la-rapadoira\/","location":"Lugo, Foz","comments":"0"},{"image":"https:\/\/www.hispacams.com\/get_imagen_ws.php?id=256&size=s","camname":"Valdelugueros \u2013 Lugueros","slug":"lugueros\/","location":"Le\u00f3n, Lugueros","comments":"0"},{"image":"https:\/\/www.hispacams.com\/get_imagen_ws.php?id=44&size=s","camname":"Pola de Somiedo","slug":"pola-de-somiedo\/","location":"Asturias, Somiedo, Pola de Somiedo","comments":"0"}],
-    [{"image":"https:\/\/www.hispacams.com\/get_imagen_ws.php?id=207&size=s","camname":"Cerredo \u2013 Zarreu","slug":"cerredo-zarreu\/","location":"Asturias, Dega\u00f1a, Cerredo","comments":"0"},{"image":"https:\/\/www.hispacams.com\/get_imagen_ws.php?id=240&size=s","camname":"Playa de Andr\u00edn","slug":"playa-de-andrin\/","location":"Asturias, Llanes, Andr\u00edn","comments":"0"},{"image":"https:\/\/www.hispacams.com\/get_imagen_ws.php?id=140&size=s","camname":"Playa de Aguilar II","slug":"playa-de-aguilar-ii\/","location":"Asturias, Muros de Nal\u00f3n","comments":"0"},{"image":"https:\/\/www.hispacams.com\/get_imagen_ws.php?id=212&size=s","camname":"Redo \u2013 Camale\u00f1o","slug":"redo-camaleno\/","location":"Cantabria, Camale\u00f1o","comments":"0"},{"image":"https:\/\/www.hispacams.com\/get_imagen_ws.php?id=29&size=s","camname":"Costa de Caravia \u2013 Arenal de Mor\u00eds","slug":"costa-de-caravia-arenal-de-moris\/","location":"Asturias, Caravia","comments":"0"},{"image":"https:\/\/www.hispacams.com\/get_imagen_ws.php?id=172&size=s","camname":"Puerto de Finisterre \u2013 Fisterra","slug":"puerto-de-finisterre\/","location":"A Coru\u00f1a, Finisterre","comments":"0"}],
+    "location":"Asturias, Cabrales, Camarme\u00f1a","comments":"0"},
+    {"image":"https://www.hispacams.com/wp-content/uploads/2025/03/manzaneda-300x128.jpg",
+    "camname":"Camarme\u00f1a \u2013 Picu Urriellu \u2013 Naranjo de Bulnes",
+    "slug":"camarmena-picu-urriellu-naranjo-de-bulnes\/",
+    "location":"Asturias, Cabrales, Camarme\u00f1a","comments":"0"},
+    {"image":"https://www.hispacams.com/wp-content/uploads/2025/03/manzaneda-300x128.jpg",
+    "camname":"Camarme\u00f1a \u2013 Picu Urriellu \u2013 Naranjo de Bulnes",
+    "slug":"camarmena-picu-urriellu-naranjo-de-bulnes\/",
+    "location":"Asturias, Cabrales, Camarme\u00f1a","comments":"0"},
+    {"image":"https://www.hispacams.com/wp-content/uploads/2023/06/cuidado-vacas.jpg",
+    "camname":"Camarme\u00f1a \u2013 Picu Urriellu \u2013 Naranjo de Bulnes",
+    "slug":"camarmena-picu-urriellu-naranjo-de-bulnes\/",
+    "location":"Asturias, Cabrales, Camarme\u00f1a","comments":"0"}]
+
 ]
 
