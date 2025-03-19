@@ -3,7 +3,7 @@ import { defineConfig } from 'astro/config';
 
 import tailwindcss from '@tailwindcss/vite';
 
-import vercel from '@astrojs/vercel/static';
+import vercel from '@astrojs/vercel';
 
 // https://astro.build/config
 export default defineConfig({
@@ -13,15 +13,12 @@ export default defineConfig({
     plugins: [tailwindcss()]
   },
 
-  adapter: vercel({
-    imageService: true,
-    devImageService: 'sharp',
-  }),
+  adapter: vercel(),
 
-  image: {    
-    remotePatterns: [{
-      protocol: 'https',
-      hostname: 'hispacams.com',
-    }],
+  image: {
+    domains: [
+        "hispacams.com"
+    ],
+    remotePatterns: [{ protocol: "https" }],
   },
 });
