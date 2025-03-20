@@ -2,8 +2,11 @@
 import Home from '../components/Home.astro';
 import Layout from '../layouts/Layout.astro';
 export const prerender = true;
+
+const date = new Date().toISOString();
 ---
 
 <Layout>
+	{date}
 	<Home />
 </Layout>

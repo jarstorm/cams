@@ -2,8 +2,11 @@
 import { MARQUEE_DATA } from "@data/marquee";
 import MainHeroMarquee from "./MainHeroMarquee.astro";
 
----
+export const prerender = false;
+const date = new Date().toISOString();
 
+---
+{date}
 <div class="w-full flex flex-col items-center bg-[linear-gradient(173.35deg,#1c3e64_-59.57%,#306383_-21.51%,#4891aa_18.04%,#6cd3e2_45.75%,#77e9f4_60.09%,rgba(126,245,255,0)_75.37%)] py-[100px]">
 <h1 class="text-white text-4xl font-baloo"><strong>Hispacams,</strong> tu portal de webcams</h1>
 <h3 class="text-xl text-white mb-[40px]">Disfruta de más de <strong>200  webcams</strong> en directo repartidas por toda España</h3>

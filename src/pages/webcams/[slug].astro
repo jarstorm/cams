@@ -7,10 +7,10 @@ const {slug} = Astro.params
 
 const postData = await getWebcamData(slug as string);
 
-
+const date = new Date().toISOString();
 ---
 
 <Layout>
-<span>Webcam page</span>
+<span>Webcam page {date}</span>
 <iframe id="player" src="https://rtsp.me/embed/rZFSk9tT/" class="w-full object-cover relative z-10 h-full" width="100%" height="100%" frameborder="0" allowfullscreen></iframe>
 </Layout>
