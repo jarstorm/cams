@@ -51,7 +51,7 @@ export const getFeaturedCams = async () => {
       slug: "estacion-invernal-valgrande-pajares-panoramica-cuitunigru-las-ubinas",
     },
     {
-      img: "https://www.hispacams.com/get_imagen_ws.php?id=256&size=s",
+      img: "https://www.hispacams.com/get_imagen_ws.php?id=243&size=s",
       name: "Valdelugueros – Lugueros",
       slug: "estacion-invernal-valgrande-pajares-panoramica-cuitunigru-las-ubinas",
     },
