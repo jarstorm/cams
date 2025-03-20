@@ -1,5 +1,35 @@
+---
+import ContentContainer from "./common/ContentContainer.astro";
+import { Image } from "astro:assets";
+---
+
 <div class="w-full h-[300px] bg-[url(/footer-bg.png)] bg-no-repeat bg-cover">
-<nav >
-    <span>Footer text</span>
-</nav>
+  <ContentContainer>
+    <div class="flex items-center justify-center h-[300px] w-full">
+      <div class="grid grid-cols-4 items-center w-full h-full">
+        <Image
+          src="/footer-logo.svg"
+          alt="footer logo"
+          width={176}
+          height={98}
+        />
+        <div class="flex flex-col">
+          <a href="#" class="text-white underline">Nuestros servicios</a>
+          <a href="#" class="text-white underline">Anunciarse</a>
+          <a href="#" class="text-white underline"
+            >¿Quieres formar parte de la red?</a
+          >
+          <a href="#" class="text-white underline">Preguntas frecuentes</a>
+        </div>
+        <div class="flex flex-col">
+          <a href="#" class="text-white underline">Casos de éxito</a>
+          <a href="#" class="text-white underline">Turismo</a>
+          <a href="#" class="text-white underline">Webcams de España</a>
+        </div>
+        <div>
+          <span>Action</span>
+        </div>
+      </div>
+    </div>
+  </ContentContainer>
 </div>

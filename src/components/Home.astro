@@ -1,6 +1,6 @@
 ---
 import MainHero from "@components/main/MainHero.astro";
-import MainFeatured from "@components/main/MainFeatured.astro";
+import MainFeatured from "./main/featured/MainFeatured.astro";
 import MainAbout from "@components/main/MainAbout.astro";
 import MainHowManyCams from "@components/main/MainHowManyCams.astro";
 import MainTopTen from "@components/main/MainTopTen.astro";
@@ -9,7 +9,7 @@ import MainNews from "@components/main/MainNews.astro";
 
 <main>
   <MainHero />
-  <MainFeatured server:defer />
+  <MainFeatured />
   <MainAbout />
   <MainHowManyCams />
   <MainTopTen />

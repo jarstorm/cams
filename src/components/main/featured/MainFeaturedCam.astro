@@ -1,0 +1,17 @@
+---
+import { Image } from "astro:assets";
+
+const { data } = Astro.props;
+---
+
+<div class="rounded-2xl">
+  <Image
+    src={data.img}
+    alt={data.name}
+    width={400}
+    height={400}
+    format="webp"
+    class="object-cover w-full h-auto"
+  />
+  <span>{data.name}</span>
+</div>

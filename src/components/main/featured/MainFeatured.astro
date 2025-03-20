@@ -1,0 +1,15 @@
+---
+import { Image } from "astro:assets";
+import MainFeaturedCams from "./MainFeaturedCams.astro";
+import ContentContainer from "../../common/ContentContainer.astro";
+---
+
+<ContentContainer>
+  <div class="flex flex-col items-center w-full gap-5">
+    <Image src="/two-eyes.svg" alt="two eyes logo" width={100} height={100} />
+    <h3 class="text-[40px] text-[#111827] font-baloo">
+      <strong>¡No te cortes!</strong> Echa un vistazo
+    </h3>
+    <MainFeaturedCams />
+  </div>
+</ContentContainer>

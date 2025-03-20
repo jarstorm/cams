@@ -1,13 +1,28 @@
 ---
 import { getPosts } from "@data/wp";
 import MainArticle from "./MainArticle.astro";
+import ContentContainer from "../common/ContentContainer.astro";
+import { Image } from "astro:assets";
 
 const posts = await getPosts();
-
 ---
 
-<div class="w-full bg-yellow-700 flex items-center justify-center">
+<ContentContainer>
+  <div class="w-full flex flex-col items-center justify-center gap-5">
+    <Image
+      src="/two-dialogs.svg"
+      alt="two dialogs logo"
+      width={100}
+      height={100}
+    />
+    <h3 class="text-[40px] text-[#111827] font-baloo">
+      <strong>No podíamos esperar</strong> a contártelo
+    </h3>
+    <span
+      >¿Quieres ver más noticias? Visita Hispanews, nuestro blog especializado</span
+    >
     <div class="grid grid-cols-2 gap-[24px]">
-        {posts.map(d => <MainArticle data={d} />)}
+      {posts.map((d) => <MainArticle data={d} />)}
     </div>
-</div>
+  </div>
+</ContentContainer>
